@@ -50,7 +50,7 @@ class SocianAuthApiClient:
         response = requests.request("POST", endpoint, headers=headers, data=payload)
         try:
             response_json = response.json()
-            return response_json["data"]["exists"]
+            return response_json["data"]
         except Exception as e:
             raise Exception(f"{response.status_code}, {response.text}")
 

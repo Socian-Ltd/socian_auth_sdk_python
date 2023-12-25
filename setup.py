@@ -7,18 +7,15 @@ setuptools.setup(
     name='socian_auth',
     author='Socian Ltd.',
     author_email='admin@socian.ai',
-    description='Example PyPI (Python Package Index) Package',
-    keywords='example, pypi, package',
+    description='Socian Auth Python SDK for authentication and user management',
+    keywords='socian auth authentication user-management sdk',
     long_description=long_description,
     long_description_content_type='text/markdown',
-    url='https://github.com/socian/socian_auth_sdk_python',
+    url='https://github.com/Socian-Ltd//socian_auth_sdk_python',
     project_urls={
-        'Documentation': 'https://github.com/tomchen/example_pypi_package',
-        'Bug Reports':
-        'https://github.com/tomchen/example_pypi_package/issues',
-        'Source Code': 'https://github.com/tomchen/example_pypi_package',
-        # 'Funding': '',
-        # 'Say Thanks!': '',
+        'Documentation': 'https://github.com/Socian-Ltd/socian_auth_sdk_python.git',
+        'Source': 'https://github.com/Socian-Ltd/socian_auth_sdk_python.git',
+        'Bug Reports': 'https://github.com/Socian-Ltd/socian_auth_sdk_python/issues',
     },
     package_dir={'': 'src'},
     packages=setuptools.find_packages(where='src'),
@@ -40,14 +37,5 @@ setuptools.setup(
     ],
     python_requires='>=3.6',
     install_requires=['requests'],
-    # extras_require={
-    #     'dev': ['check-manifest'],
-        # 'test': ['coverage'],
-    # },
-    # entry_points={
-    #     'console_scripts': [  # This can provide executable scripts
-    #         'run=examplepy:main',
-    # You can execute `run` in bash to run `main()` in src/examplepy/__init__.py
-    #     ],
-    # },
+    license='MIT',
 )
